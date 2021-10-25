@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General configurations */
+@media only screen and (max-width: 600px) {
+}
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: Lato, Sans-Serif;
+  font-size: 14px;
+}
+h1,
+h2,
+h3 {
+  font-family: Montserrat, Sans-Serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+p {
+  font-size: 1.2rem;
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+/* header */
+header {
+  position: relative;
+  height: 55vh;
+  background-image: url("assets/img/studentsbg.png");
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  color: #fff;
+  text-align: center;
+}
+header > div {
+  background-color: #c5192d;
+  position: absolute;
+  bottom: -4rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* main */
+main {
+  /* box-shadow: 1px darkgrey; */
+  box-shadow: 0 0 1px darkgrey;
+  background-color: whitesmoke;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* intro-container */
+#intro-container {
+  background-color: #c5192d;
+  padding: 2rem;
+}
+
+#intro-container ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+#intro-container ul > li::before {
+  content: "\1F4DA";
+  display: inline-block;
+  margin: 1rem 1rem 0 1rem;
+  width: 1rem;
+}
+
+#intro-container ul > li:nth-child(1):before {
+  content: "\1F64C";
+}
+
+#intro-container ul > li:nth-child(2):before {
+  content: "\1F3EB";
+}
+
+/* articles */
+article {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+article img {
+  width: 100%;
+}
+article:nth-child(2) {
+  margin-bottom: 0;
+}
+article:nth-child(3) {
+  border-top: 0.1px solid darkgrey;
+}
+
+/* footer */
+footer {
+  background-color: #c5192d;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+footer a,
+footer a:visited,
+footer a:active {
+  color: #fff;
+}
+
+/* General configurations */
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    height: 65vh;
+  }
+  header,
+  main,
+  footer {
+    width: 85vw;
+  }
+  article {
+    display: table;
+  }
+  article img {
+    display: table-cell;
+  }
+}
+
+/* General configurations */
+@media only screen and (min-width: 960px) {
+  body {
+    font-size: 24px;
+  }
+  header {
+    height: 65vh;
+  }
+  header,
+  main,
+  footer {
+    width: 70vw;
+  }
+}
